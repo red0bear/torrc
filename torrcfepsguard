@@ -1,0 +1,31 @@
+
+#Guard only dont need those things enabled
+BridgeRelay 0
+ExitRelay   0
+SocksPort   0
+
+Nickname    PIQUISTAO  # Change "myNiceRelay" to something you like
+ContactInfo mentalcontact@elsewhere.com  # Write your e-mail and be aware it will be published
+
+#This case i have bad ISP and they offer only IPV4 Config 
+#You must check if your provider let u use lower ports ; i advice you try use ports above 10000-65535
+ORPort      auto   IPv4Only          
+#ORPort  [::]:auto #use this to enable IPV6 if you have 
+DirPort     auto
+
+#This should block any plaintext port but uses RejectPlaintextPorts 25,22,4949
+SafeSocks 1
+#RejectPlaintextPorts 25,22,4949
+
+#Reject internal address
+ClientDNSRejectInternalAddresses 1
+ClientRejectInternalAddresses 1
+
+#This stuff limits how much you would like to share from your internet to others , need notice let use all you internet traffic you may face frozen connections
+RelayBandwidthRate 260 KBytes  # Throttle traffic to 100KB/s (800Kbps)
+RelayBandwidthBurst 300  KBytes # But allow bursts up to 200KB (1600Kb)
+
+#To enable this you need comment RelayBandwidthRate and  RelayBandwidthBurst
+#AccountingMax 2 Gbytes
+#AccountingStart day 00:00
+#AccountingStart month 3 15:00
