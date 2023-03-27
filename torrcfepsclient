@@ -1,0 +1,28 @@
+#Clients only dont need those things enabled
+BridgeRelay 0
+ExitRelay   0
+ORPort      0
+DirPort     0
+
+#This must be used carefull 
+# Unix is more interprocess stuff .. but browser/bitcoin wallets seems dont support it 
+#SocksPort unix:path_to_my_tenacious_var.socks
+SocksPort 9050 
+
+#This should block any plaintext port but uses RejectPlaintextPorts 25,22,4949
+SafeSocks 1
+#RejectPlaintextPorts 25,22,4949
+
+#Reject internal address
+ClientDNSRejectInternalAddresses 1
+ClientRejectInternalAddresses 1
+
+
+#If this option is set to 'auto', then whenever any country code is set in
+#ExcludeNodes or ExcludeExitNodes, all nodes with unknown country (\{??} and
+#possibly \{A1}) are treated as excluded as well. If this option is set to
+#'1', then all unknown countries are treated as excluded in ExcludeNodes
+#and ExcludeExitNodes.  This option has no effect when a GeoIP file isn't
+#configured or can't be found.  (Default: auto)
+
+GeoIPExcludeUnknown 1
