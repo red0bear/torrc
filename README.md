@@ -5,6 +5,8 @@ Non Official repo with configuration and considertations about using tor
 
 https://linux.die.net/man/1/tor
 
+https://github.com/torproject/tor/blob/main/doc/man/tor.1.txt
+
 #BEFORE SET PORTS CONSULT WHAT PORTS A SUPPOSE TO ON TCP CONNECTION 
 
 https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers
