@@ -1,6 +1,10 @@
 # torrc
 Non Official repo with configuration and considertations about using tor 
 
+# Privacy matters
+
+[The Government is Buying Your Data With Your Money](https://www.youtube.com/watch?v=s5ARJB4gB6g)
+
 #MANUAL ONLINE
 
 https://linux.die.net/man/1/tor
