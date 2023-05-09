@@ -4,6 +4,8 @@
 #Tor and Vpn arent safe as they claim , You can hidden your self but your data and traffic can be easily analyzed; be careful 
 #Label who want to help and contribute as evil make more damage than you think
 
+#Exit nodes as any other config need a good iptables config 
+
 BridgeRelay 0
 SafeSocks 1
 #This must be enabled in way to make exit avaiable
