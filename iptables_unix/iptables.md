@@ -15,7 +15,9 @@ iptables -A INPUT -p tcp --match multiport --sports 0:65535 -j ACCEPT
 # Command to remove or prevent people to use your OUTPUT to TCP CONNECTION
 
 iptables -A OUTPUT -p tcp --syn --dport 22 -j REJECT --reject-with tcp-reset
+
 iptables -A OUTPUT -p tcp --syn --dport 23 -j REJECT --reject-with tcp-reset
+
 iptables -A OUTPUT -p tcp --syn --dport 25 -j REJECT --reject-with tcp-reset
 
 # Command to LIMIT how many people can use your OUTPUT during TCP CONNECTION
