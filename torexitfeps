@@ -1,0 +1,57 @@
+#Running exit relays cause some damage and trust and you will not be able to connect sites as before
+#Most who need uses exits are vpn companies,universitries and bad actors who perform attacks via tor exits and make you be blacklisted
+#Comminity around tor try forces his personal wishs on you relay operator tor, but they have zero worry about you and safety
+#Tor and Vpn arent safe as they claim , You can hidden your self but your data and traffic can be easily analyzed; be careful 
+#Label who want to help and contribute as evil make more damage than you think
+
+BridgeRelay 0
+SafeSocks 1
+#This must be enabled in way to make exit avaiable
+ExitRelay   1
+#This make IPV6 avaiable with same config 
+IPv6Exit 0
+SocksPort   0
+
+Nickname    PIQUISTAO  # Change "myNiceRelay" to something you like
+ContactInfo my_nice_name  # Write your e-mail and be aware it will be published
+ORPort   0.0.0.0:11111   # You might use a different port, should you want to
+#ORPort  [::]:11111          IPv6Only
+#DirPort     22222
+
+ReducedExitPolicy 0
+
+ClientDNSRejectInternalAddresses 1
+ClientRejectInternalAddresses 1
+
+ExitPolicyRejectLocalInterfaces 0
+
+#control the things here
+RelayBandwidthRate 000 KBytes  # Throttle traffic to 100KB/s (800Kbps)
+RelayBandwidthBurst 000  KBytes # But allow bursts up to 200KB (1600Kb)
+
+#A nice policy since you dont get paid and expose you real name to real world
+ExitPolicy accept *:53
+ExitPolicy accept *:80
+ExitPolicy accept *:443
+ExitPolicy accept *:9000-55000
+
+#Important to avoid be global 
+ExitPolicy reject *:0-8999
+
+#COPY OF DEFAULT
+ExitPolicy reject 0.0.0.0/8:*
+ExitPolicy reject 169.254.0.0/16:*
+ExitPolicy reject 127.0.0.0/8:*
+ExitPolicy reject 192.168.0.0/16:*
+ExitPolicy reject 10.0.0.0/8:*
+
+#There similar address but from universitries and since they have infinite money printer there is no necessity to accept those comunists :)
+ExitPolicy reject 128.0.0.142:*
+ExitPolicy reject 172.16.0.0/12:*
+
+#Those IPS seems work to real state and perfom tests on tor or just make damage blacklisting your exit ip
+ExitPolicy reject 8.8.4.4:*
+ExitPolicy reject 1.1.1.1:*
+
+#to overrride default config using ExitPolicy accept *:* or ExitPolicy reject *:*
+ExitPolicy reject *:*
