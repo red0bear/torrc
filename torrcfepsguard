@@ -7,6 +7,9 @@ SocksPort   0
 Nickname    PIQUISTAO  # Change "myNiceRelay" to something you like
 ContactInfo mentalcontact@elsewhere.com  # Write your e-mail and be aware it will be published
 
+# This option help you skip initial test to test if others can reach you from outside on IPV4 , this is good to people who are behind layers of NAT
+#AssumeReachable 1
+
 #This case i have bad ISP and they offer only IPV4 Config 
 #You must check if your provider let u use lower ports ; i advice you try use ports above 10000-65535
 ORPort      auto   IPv4Only          
