@@ -11,7 +11,7 @@ Non Official repo with configuration and considertations about using tor
 
 # EXCHANGE IS NOT A BANK AND YOU SHOULDNT TRUST
 
-[The Dogecoin Crypto Exchange That Vanished Overnight](https://www.youtube.com/watch?v=wJf649zvG08)
+[The Dogecoin Crypto Exchange That Vanished Overnight](https://www.youtube.com/watch?v=wJf649zvG0)
 
 # MANUAL ONLINE
 
