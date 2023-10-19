@@ -7,7 +7,7 @@ Non Official repo with configuration and considertations about using tor
 
 [The Government is Buying Your Data With Your Money](https://www.youtube.com/watch?v=s5ARJB4gB6g)
 
-[Tor relays may be dangerous](https://www.youtube.comwatch?v=pvBAaUPzvBQ)
+[Tor relays may be dangerous](https://www.youtube.com/watch?v=pvBAaUPzvBQ)
 
 # EXCHANGE IS NOT A BANK AND YOU SHOULDNT TRUST
 
